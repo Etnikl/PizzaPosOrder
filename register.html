@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="./assets/style/style.css"/>
+  <link href='https://css.gg/css' rel='stylesheet'>
+  <title>Register</title>
+</head>
+<body>
+  <div class="container">
+    <div class="displaycontainer">
+        <div class="insidecont">
+            <picture class="logo">
+                <source srcset="./assets/images/logo/logoposorder.svg" media="(min-width: 700px)">
+                <img src="./assets/images/logo/logoposorder-1.svg" alt="LogoPOS" style="width: auto;">
+            </picture>
+        </div>
+        <div class="line-br"></div>
+        <div class="insidecont">
+            <form class="user-login" action="">
+                <label for="name">Name</label>
+                    <input type="text" name="name" id="name" placeholder="Full Name" minlength="3" maxlength="30" required
+                    onfocus="this.placeholder='Type your name...'" 
+                    onblur="this.placeholder='Full Name'">
+                <label for="mail">E-mail</label>
+                <input type="text" name="mail" id="username" placeholder="E-mail" 
+                onfocus="this.placeholder='name@mail.com'" 
+                onblur="this.placeholder='E-mail'">
+                <label for="address">Phone Number</label>
+                    <input type="tel" name="phonenumber" id="phonenumber" placeholder="Phone number" minlength="1" maxlength="9" pattern="\d{9}" required>
+                <label for="password">Password</label>
+                <input type="password" name="password" id="password" placeholder="Type your password...">
+                <br />
+                <input type="button" value="Register" onclick="location.href='./index.html';" required>
+                <input id="signup" type="button" value="Registered ? Login now..." onclick="location.href='./index.html';" required>
+            </form>
+        </div>
+    </div>
+</div>
+</body>
+</html>

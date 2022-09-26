@@ -1,0 +1,320 @@
+:root {
+    --bgcolor: #f3f3f3;
+    --buttonred: #ed1b26;
+    --linebrk: #333333;
+    --inputhover: #ffbb01;
+    --input: #FFD401;
+    --card: #E5E5E5;
+}
+@font-face {
+    font-family: Lynstone;
+    src: url(../fonts/Lynstone/Lynstone/Lynstone.otf);
+}
+@import url('https://css.gg/css');
+html, body {
+    height: 100%;
+    margin: 0 auto;
+}
+body {
+    font-family: 'Lynstone', Arial, sans-serif;
+    font-weight: normal;
+    font-style: normal;
+    background-color: var(--bgcolor);
+}
+div.container {
+    margin: 0 auto;
+    width: 80%;
+    height: 100%;
+}
+div.displaycontainer {
+    display: flex;
+    align-items: center;
+    margin: 0 auto;
+    width: 90%;
+    height: 100%;
+}
+form {
+    display: inherit;
+}
+div.insidecont {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    width: 49%;
+    height: 100%;
+}
+div.line-br {
+    width: 2px;
+    border-radius: 5px;
+    height: 500px;
+    background-color: var(--linebrk);
+    margin: 0 auto;
+    display: inline-block;
+}
+picture.logo {
+    align-items: center;
+    display: inline-block;
+    width: 80%;
+}
+form.user-login {
+    display: inline-grid;
+}
+input {
+    margin-bottom: 10px;
+}
+input[type=text] {
+    width: 100%;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    background-color: white;
+    background-size: 24px;
+    background-image: url('../images/icone/user.svg');
+    background-position: 10px 10px; 
+    background-repeat: no-repeat;
+    padding: 12px 20px 12px 40px;
+}
+input[type=text]:focus {
+    background-image: url('../images/icone/user-1.svg');
+    transition-timing-function: ease-in-out;
+    transition-delay: 0.12s;
+    outline: 2px solid var(--inputhover);
+    outline-offset: -2px;
+}
+input[type=tel]:hover {
+    border-color: var(--inputhover);
+}
+input[type=tel] {
+    width: 100%;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    background-color: white;
+    background-size: 24px;
+    background-image: url('../images/icone/phone-1.svg');
+    background-position: 10px 10px; 
+    background-repeat: no-repeat;
+    padding: 12px 20px 12px 40px;
+}
+input[type=tel]:focus {
+    background-image: url('../images/icone/phone.svg');
+    transition-timing-function: ease-in-out;
+    transition-delay: 0.12s;
+    outline: 2px solid var(--inputhover);
+    outline-offset: -2px;
+}
+input[type=text]:hover {
+    border-color: var(--inputhover);
+}
+input#address[type=text] {
+    width: 100%;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    background-color: white;
+    background-size: 24px;
+    background-image: url('../images/icone/pin.svg');
+    background-position: 10px 10px; 
+    background-repeat: no-repeat;
+    padding: 12px 20px 12px 40px;
+}
+input#address[type=text]:focus {
+    background-image: url('../images/icone/pin-1.svg');
+    transition-timing-function: ease-in-out;
+    transition-delay: 0.12s;
+    outline: 2px solid var(--inputhover);
+    outline-offset: -2px;
+}
+input#address[type=text]:visited {
+    background-image: url('../images/icone/pin-1.svg');
+    outline: 2px solid var(--inputhover);
+    outline-offset: -2px;
+}
+input#address[type=text]:hover {
+    border-color: var(--inputhover);
+}
+input[type=password] {
+    width: 100%;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    background-color: white;
+    background-size: 24px;
+    background-image: url('../images/icone/password.svg');
+    background-position: 14px 10px; 
+    background-repeat: no-repeat;
+    padding: 14px 20px 14px 50px;
+}
+input[type=password]:focus {
+    background-image: url('../images/icone/password-1.svg');
+    transition-timing-function: ease-in-out;
+    transition-delay: 0.12s;
+    outline: 2px solid var(--inputhover);
+    outline-offset: -2px;
+}
+input[type=password]:hover {
+    border-color: var(--inputhover);
+}
+input[type=button], input[type=submit], input[type=reset] {
+    background-color: var(--inputhover);
+    width: 100%;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    padding: 16px 32px;
+    text-decoration: none;
+    font-size: large;
+    font-weight: bold;
+    margin: 5px auto;
+    cursor: pointer;
+}
+input[type=button]:hover, input[type=submit]:hover, input[type=reset]:hover {
+    background-color: var(--input);
+    transition-timing-function: ease-in-out;
+    transition-delay: 0.12s;
+}
+input#signup[type=button] {
+    background-color: transparent;
+    width: 100%;
+    color: var(--inputhover);
+    font-size: small;
+    text-decoration: none;
+    margin: 5px auto;
+    cursor: pointer;
+}
+label {
+    padding-bottom: 10px;
+    padding-left: 5px;
+}
+
+/* CSS PRODUKTET */
+
+div.products {
+    display: inline-grid;
+    align-items: start;
+    justify-items: center;
+    margin: auto;
+    width: 90%;
+    height: auto;
+    /* background-color: #333333; */
+}
+div.product {
+    display: inline-grid;
+    justify-items: center;
+    align-content: space-between;
+    align-items: start;
+    margin: 0 auto;
+    width: 100%;
+    /* background-color: #ed1b26; */
+    padding: 20px 0px;
+}
+div.size {
+    display: inline-flex;
+    margin: 0 auto;
+    /* background-color: #ed1b26; */
+}
+div.product h2 {
+    display: inline-block;
+    position: relative;
+    text-align: center;
+    margin: 0;
+}
+div.card-product {
+    align-items: center;
+    justify-items: center;
+    width: 100%;
+    margin-right: 30px;
+    display: grid;
+    background-color: var(--card);
+    border: 1px solid #8C8C8C;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1), 0 6px 12px 0 rgba(0, 0, 0, 0.1);
+}
+div.card-product:last-of-type {
+    margin-right: 0px;
+}
+label.radio {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    font-size: large;
+    margin-top: 0px;
+    margin-left: 0px;
+    padding-top: 40px;
+    padding-right: 40px;
+    padding-left: 40px;
+    padding-bottom: 40px;
+}
+.card-product input[type="radio"] {
+    display: none;
+}
+.card-product input[type="radio"]:checked + label {
+    background-color: var(--inputhover);
+    border-radius: 8px;
+    color: white;
+}
+.card-product input[type="radio"]:hover + label {
+    background-color: var(--inputhover);
+    border-radius: 8px;
+    border-color: #ffbb01;
+    color: white;
+}
+
+/* CSS Checkbox */
+
+div.card-product-ingr  {
+    width: 250px;
+    margin-right: 30px;
+    display: grid;
+    background-color: var(--card);
+    border: 1px solid #8C8C8C;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px 0 rgb(0 0 0 / 10%), 0 6px 12px 0 rgb(0 0 0 / 10%);
+}
+label.checkbox {
+    display: inline-block;
+
+    margin: 0px;
+    align-items: center;
+    font-weight: bold;
+    padding: 20px 20px;
+}
+.card-product-ingr input[type="checkbox"] {
+    display: none;
+}
+.card-product-ingr input[type="checkbox"]:checked + label {
+    background-color: var(--inputhover);
+    border-radius: 8px;
+    color: white;
+}
+img.chekbox-product {
+    display: inline-block;
+    width: 80px;
+}
+.selection {
+    display: inline-block;
+    position: relative;
+    top: 0px;
+    width: 100%;
+}
+.qty-box {
+    display: inline-grid;
+    float: right;
+    justify-items: right;
+    position: relative;
+}
+.qty {
+    display: inline-block;
+    width: 100%;
+    height: auto;
+    margin-right: 5px;
+}
+h4 {
+    display: inline-block;
+    margin: 10px;
+}

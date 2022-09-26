@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="./assets/style/style.css"/>
+    <script src="http://code.jquery.com/jquery-latest.js"></script>
+    <link href='https://css.gg/css' rel='stylesheet'>
+    <title>Pizza POS Order</title>
+</head>
+<body>
+    <div class="container displaycontainer">
+        <div class="products">
+            <form action="">
+                <div class="product">
+                    <h2>Choese Size of Pizza</h2>
+                    <br />
+                    <div class="size">
+                        <div class="card-product">
+                            <input type="radio" name="size" id="small" value="small" checked>
+                            <label class="radio" for="small">Small</label>
+                        </div>
+                        <div class="card-product">
+                            <input type="radio" name="size" id="medium" value="medium">
+                            <label class="radio" for="medium">Medium</label>
+                        </div>
+                        <div class="card-product">
+                            <input type="radio" name="size" id="large" value="large">
+                            <label class="radio" for="large">Large</label>
+                        </div>
+                    </div>
+                </div>
+                <div class="product ingr">
+                    <h2>Choese Kind of Pizza</h2>
+                    <br />
+                    <div class="size">
+                        <div class="card-product-ingr">
+                            <input type="checkbox" name="ingr" id="peperoni" value="peperoni">
+                            <label class="checkbox" for="peperoni">
+                                <div class="selection">
+                                    <img class="chekbox-product" src="./assets/images/pizza/peperoni.webp" alt="">
+                                    <div class="qty-box">
+                                        <h4>Peperoni</h4>
+                                        <div class="qty">
+                                            <label for="qty">QTY</label>
+                                            <input type="number" name="qty" id="qty" min="1" max="10">
+                                        </div>
+                                    </div>
+                                </div>
+                            </label>
+                        </div>
+                        <div class="card-product-ingr">
+                            <input type="checkbox" name="ingr" id="fungi" value="fungi">
+                            <label class="checkbox" for="fungi">
+                                <div class="selection">
+                                    <img class="chekbox-product" src="./assets/images/pizza/fungi.webp" alt="">
+                                    <div class="qty-box">
+                                        <h4>Fungi</h4>
+                                        <div class="qty">
+                                            <label for="qty">QTY</label>
+                                            <input type="number" name="qty" id="qty" min="1" max="10">
+                                        </div>
+                                    </div>
+                                </div>
+                            </label>
+                        </div>
+                        <div class="card-product-ingr">
+                            <input type="checkbox" name="ingr" id="capricciosa" value="capricciosa">
+                            <label class="checkbox" for="capricciosa">
+                                <div class="selection">
+                                    <img class="chekbox-product" src="./assets/images/pizza/capricciosa.webp" alt="">
+                                    <div class="qty-box">
+                                        <h4>Capricciosa</h4>
+                                        <div class="qty">
+                                            <label for="qty">QTY</label>
+                                            <input type="number" name="qty" id="qty" min="1" max="10">
+                                        </div>
+                                    </div>
+                                </div>
+                            </label>
+                        </div>
+                    </div>
+                </div>
+                <div class="info">
+                    <h2>Address Information</h2>
+                    <label for="name">Name</label>
+                    <input type="text" name="name" id="name" placeholder="Full Name" minlength="3" maxlength="30" required
+                    onfocus="this.placeholder='Type your name...'" 
+                    onblur="this.placeholder='Full Name'">
+                    <label for="address">Address</label>
+                    <input type="text" name="address" id="address" placeholder="Address" minlength="3" maxlength="30" required
+                    onfocus="this.placeholder='Type your address...'" 
+                    onblur="this.placeholder='Address'">
+                    <label for="address">Phone Number</label>
+                    <input type="tel" name="phonenumber" id="phonenumber" placeholder="Phone number" minlength="1" maxlength="9" pattern="\d{9}" required>
+                    <div class="infobtn">
+                        <input type="submit" value="Order" name="order">
+                        <input type="reset" value="Cancel" name="resetrder">
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+    <script>
+    </script>
+</body>
+</html>
